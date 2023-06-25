@@ -104,6 +104,24 @@ VALUES
     (5, 5, 'Viavel'),
     (5, 6, 'Viavel');
 ```
+-
+# 2 - Backend:
+FastAPI é um framework moderno que permite construir APIs de forma fácil e eficiente. Ele separa o código do servidor da lógica de negócio, o que aumenta a manutenibilidade do código. Por ser construído sobre o ASGI (Asynchronous Server Gateway Interface), em vez do WSGI (Web Server Gateway Interface), ele é muito mais rápido em comparação com o Flask. O FastAPI possui um sistema de validação de dados que detecta tipos de dados inválidos em tempo de execução e retorna a razão dos inputs inválidos para o usuário no formato JSON, o que permite que os desenvolvedores lidem com essa exceção de forma implícita.
+
+Ele gera a documentação automaticamente durante o desenvolvimento da API, o que é uma funcionalidade bastante solicitada pelos desenvolvedores. A documentação é uma ótima maneira para que outros desenvolvedores colaborem em um projeto, pois apresenta todas as funcionalidades com as instruções necessárias. O FastAPI também gera uma interface gráfica agradável, solucionando uma limitação do Flask.
+
+## Métodos
+### GET
+![GET](/images/GET.png)
+
+### POST
+![POST](/images/POST.png)
+
+### PUT
+![PUT](/images/PUT.png)
+
+### DELETE
+![DELETE](/images/DELETE.png)
 
 ## Rodando api
 ```
