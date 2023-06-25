@@ -128,6 +128,8 @@ Ele gera a documentação automaticamente durante o desenvolvimento da API, o qu
 $ cd myapi
 $ uvicorn main:app --reload
 ```
+# 3 - Frontend
+Frontend desenvolvido em Angular 16
 
 ## Rodando FrontEnd
 ```
@@ -135,4 +137,20 @@ $ cd my-front
 $ npm install
 $ ng serve -o
 ```
+
+# 4 - Documentação
+1. Qual dos dois bancos (MySQL ou Postgres) você utilizou e o motivo;
+O PostgreSQL possui algumas vantagens sobre o MySQL em diferentes áreas:
+
+    Recursos avançados: O PostgreSQL oferece recursos mais avançados em termos de funcionalidades e capacidades. Ele suporta tipos de dados mais complexos, como arrays, tipos geométricos, JSON, entre outros. Além disso, possui recursos robustos de consulta, como junções externas completas, subconsultas correlacionadas e consultas recursivas.
+
+    Conformidade com padrões: O PostgreSQL é conhecido por sua aderência estrita aos padrões SQL. Ele é altamente compatível com as especificações do SQL ANSI e é amplamente utilizado em ambientes que exigem conformidade e consistência.
+
+    Extensibilidade: O PostgreSQL permite a criação de extensões personalizadas, o que possibilita estender suas funcionalidades de acordo com as necessidades específicas de um projeto. Isso oferece flexibilidade e a capacidade de adaptar o banco de dados às necessidades em constante evolução.
+
+    Suporte a transações: O PostgreSQL possui um mecanismo de transações altamente confiável e robusto. Ele suporta transações ACID (Atomicidade, Consistência, Isolamento e Durabilidade), o que garante a integridade dos dados mesmo em cenários complexos com várias operações simultâneas.
+
+    Desempenho: Embora o desempenho de um banco de dados possa variar dependendo do cenário e da configuração específica, o PostgreSQL é conhecido por seu desempenho sólido em cargas de trabalho complexas e pesadas. Ele possui otimizador de consultas avançado e opções de configuração flexíveis para ajustar e otimizar o desempenho de acordo com as necessidades.
+
+    Maturidade e comunidade ativa: O PostgreSQL é um banco de dados de código aberto com uma comunidade de desenvolvedores ativa e engajada. Ele existe há bastante tempo e possui uma base de usuários e desenvolvedores ampla e diversificada, o que contribui para sua maturidade, estabilidade e disponibilidade de recursos.
 
