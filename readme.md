@@ -1,20 +1,22 @@
 # 1 - Banco de dados
 O PostgreSQL possui algumas vantagens sobre o MySQL em diferentes áreas:
 
-    Recursos avançados: O PostgreSQL oferece recursos mais avançados em termos de funcionalidades e capacidades. Ele suporta tipos de dados mais complexos, como arrays, tipos geométricos, JSON, entre outros. Além disso, possui recursos robustos de consulta, como junções externas completas, subconsultas correlacionadas e consultas recursivas.
+Recursos avançados: O PostgreSQL oferece recursos mais avançados em termos de funcionalidades e capacidades. Ele suporta tipos de dados mais complexos, como arrays, tipos geométricos, JSON, entre outros. Além disso, possui recursos robustos de consulta, como junções externas completas, subconsultas correlacionadas e consultas recursivas.
 
-    Conformidade com padrões: O PostgreSQL é conhecido por sua aderência estrita aos padrões SQL. Ele é altamente compatível com as especificações do SQL ANSI e é amplamente utilizado em ambientes que exigem conformidade e consistência.
+Conformidade com padrões: O PostgreSQL é conhecido por sua aderência estrita aos padrões SQL. Ele é altamente compatível com as especificações do SQL ANSI e é amplamente utilizado em ambientes que exigem conformidade e consistência.
 
-    Extensibilidade: O PostgreSQL permite a criação de extensões personalizadas, o que possibilita estender suas funcionalidades de acordo com as necessidades específicas de um projeto. Isso oferece flexibilidade e a capacidade de adaptar o banco de dados às necessidades em constante evolução.
+Extensibilidade: O PostgreSQL permite a criação de extensões personalizadas, o que possibilita estender suas funcionalidades de acordo com as necessidades específicas de um projeto. Isso oferece flexibilidade e a capacidade de adaptar o banco de dados às necessidades em constante evolução.
 
-    Suporte a transações: O PostgreSQL possui um mecanismo de transações altamente confiável e robusto. Ele suporta transações ACID (Atomicidade, Consistência, Isolamento e Durabilidade), o que garante a integridade dos dados mesmo em cenários complexos com várias operações simultâneas.
+Suporte a transações: O PostgreSQL possui um mecanismo de transações altamente confiável e robusto. Ele suporta transações ACID (Atomicidade, Consistência, Isolamento e Durabilidade), o que garante a integridade dos dados mesmo em cenários complexos com várias operações simultâneas.
 
-    Desempenho: Embora o desempenho de um banco de dados possa variar dependendo do cenário e da configuração específica, o PostgreSQL é conhecido por seu desempenho sólido em cargas de trabalho complexas e pesadas. Ele possui otimizador de consultas avançado e opções de configuração flexíveis para ajustar e otimizar o desempenho de acordo com as necessidades.
+Desempenho: Embora o desempenho de um banco de dados possa variar dependendo do cenário e da configuração específica, o PostgreSQL é conhecido por seu desempenho sólido em cargas de trabalho complexas e pesadas. Ele possui otimizador de consultas avançado e opções de configuração flexíveis para ajustar e otimizar o desempenho de acordo com as necessidades.
 
-    Maturidade e comunidade ativa: O PostgreSQL é um banco de dados de código aberto com uma comunidade de desenvolvedores ativa e engajada. Ele existe há bastante tempo e possui uma base de usuários e desenvolvedores ampla e diversificada, o que contribui para sua maturidade, estabilidade e disponibilidade de recursos.
+Maturidade e comunidade ativa: O PostgreSQL é um banco de dados de código aberto com uma comunidade de desenvolvedores ativa e engajada. Ele existe há bastante tempo e possui uma base de usuários e desenvolvedores ampla e diversificada, o que contribui para sua maturidade, estabilidade e disponibilidade de recursos.
 
-    Você tem alguma sugestão de melhoria na estrutura de banco de dados enviado?
-        
+Você tem alguma sugestão de melhoria na estrutura de banco de dados enviado?
+Normalização: A estrutura atual não está totalmente normalizada. Uma melhoria seria separar a tabela tb_parceiros em duas tabelas distintas: uma para armazenar os dados do parceiro e outra para armazenar as informações de cobertura do parceiro. Isso ajudaria a evitar a repetição de dados e permitiria uma melhor organização das informações.
+
+
 
 ### Criação da tabela tb_parceiros
 ```
