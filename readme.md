@@ -93,3 +93,11 @@ VALUES
     (5, 5, 'Viavel'),
     (5, 6, 'Viavel');
 
+Rodando api
+$ cd myapi
+$ uvicorn main:app --reload
+
+Rodando FrontEnd
+$ cd my-front
+$ npm install
+$ ng serve -o
