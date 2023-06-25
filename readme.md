@@ -1,6 +1,7 @@
-#1 - Carga no Banco de dados
+# 1 - Carga no Banco de dados
 
--- Criação da tabela tb_parceiros &nbsp
+### Criação da tabela tb_parceiros
+```
 CREATE TABLE tb_parceiros (
     id SERIAL PRIMARY KEY,
     nome_parceiro VARCHAR(100),
@@ -8,8 +9,9 @@ CREATE TABLE tb_parceiros (
     cnpj_parceiro VARCHAR(100),
     uf_cobertura VARCHAR(100)
 );
-
--- Criação da tabela tb_viabilidade &nbsp
+```
+### Criação da tabela tb_viabilidade 
+```
 CREATE TABLE tb_viabilidade (
     id SERIAL PRIMARY KEY,
     logradouro VARCHAR(100),
@@ -20,8 +22,10 @@ CREATE TABLE tb_viabilidade (
     produto VARCHAR(100),
     velocidade VARCHAR(100)
 );
+```
 
--- Criação da tabela tb_resultado_viabilidade &nbsp
+### Criação da tabela tb_resultado_viabilidade
+```
 CREATE TABLE tb_resultado_viabilidade (
     id SERIAL PRIMARY KEY,
     id_parceiro_resposta INTEGER,
@@ -30,8 +34,10 @@ CREATE TABLE tb_resultado_viabilidade (
     FOREIGN KEY (id_parceiro_resposta) REFERENCES tb_parceiros (id),
     FOREIGN KEY (id_viabilidade) REFERENCES tb_viabilidade (id)
 );
+```
 
--- Inserção dos dados na tabela tb_parceiros &nbsp
+### Inserção dos dados na tabela tb_parceiros
+```
 INSERT INTO tb_parceiros (nome_parceiro, endereco_parceiro, cnpj_parceiro, uf_cobertura)
 VALUES
     ('13Telecom', 'Rua Abilio Soares, 15, Paraiso', '888888888/0001-23', 'SP; RJ;MG'),
@@ -45,8 +51,9 @@ VALUES
     ('21Telecom', 'Av. Argélia, 173 - Miragaia, Ubá - MG, 36500-000, Brasil', '888888888/0001-31', 'MG;MS'),
     ('22Telecom', 'QN 211 Cj. 1, 42 - Samambaia Norte, Brasília - DF, 72343-052, Brasil', '888888888/0001-32', 'DF; MG;SP;MS'),
     ('23Telecom', 'Av. Me. Tereza de Calcutá, 27 - Parque Industrial Joao Bras, Goiânia - GO, 74492-000, Brasil', '888888888/0001-33', 'GO;DF');
-
--- Inserção dos dados na tabela tb_viabilidade &nbsp
+```
+### Inserção dos dados na tabela tb_viabilidade
+```
 INSERT INTO tb_viabilidade (logradouro, numero, bairro, cidade, uf, produto, velocidade)
 VALUES
     ('Rod. Mario Batista Mori', '33', 'Res. Ecopark', 'São Paulo', 'SP', 'Ip Connect', '10MBPS'),
@@ -59,8 +66,10 @@ VALUES
     ('Avenida Sto Amaro', '94', 'Santo Amaro', 'São Paulo', 'SP', 'Ip Connect', '50MBPS'),
     ('Rua Itabapoana', '1000', 'Vila Isa', 'São Paulo', 'SP', 'Ip Connect', '500MBPS'),
     ('Praça Milton Campos', '100', 'Serra', 'Belo Horizonte', 'MG', 'Ip Connect', '200MBPS');
+```
 
--- Inserção dos dados na tabela tb_resultado_viabilidade &nbsp
+### Inserção dos dados na tabela tb_resultado_viabilidade
+```
 INSERT INTO tb_resultado_viabilidade (id_viabilidade, id_parceiro_resposta, resultado_parceiro)
 VALUES
     (7, 4, 'Viavel'),
@@ -94,14 +103,15 @@ VALUES
     (5, 4, 'Viavel'),
     (5, 5, 'Viavel'),
     (5, 6, 'Viavel');
+```
 
-##Rodando api
+## Rodando api
 ```
 $ cd myapi
 $ uvicorn main:app --reload
 ```
 
-##Rodando FrontEnd
+## Rodando FrontEnd
 ```
 $ cd my-front
 $ npm install
