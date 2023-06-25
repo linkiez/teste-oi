@@ -144,6 +144,7 @@ Ele gera a documentação automaticamente durante o desenvolvimento da API, o qu
 ## Rodando api
 ```
 $ cd myapi
+$ pip install fastapi uvicorn
 $ uvicorn main:app --reload
 ```
 # 3 - Frontend
